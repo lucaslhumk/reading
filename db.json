@@ -1,26 +1,25 @@
 {
-  "meusLivros": [
+  "MyBooks": [
     {
-      "id": "01",
-      "titulo": "Lorem ipsum",
-      "autor": "Lucas",
-      "thumbnail": "",
-      "paginas": "400",
-      "inicio": "01/05/2022",
-      "termino": "02/05/2022",
-      "nota": "5",
-      "avaliacao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna nulla. Curabitur mollis lorem at mauris vestibulum, ut hendrerit eros facilisis."
+      "paginas": "600",
+      "thumbnail": "http://books.google.com/books/content?id=DLKMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "titulo": "A guerra dos tronos",
+      "autor": "George R. R. Martin",
+      "inicio": "2022-02-07",
+      "termino": "2022-04-02",
+      "avaliacao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula quam, pharetra a sem sit amet, dapibus hendrerit nisl. Integer vestibulum faucibus tortor. Quisque lacinia nisl velit, consequat dignissim velit luctus vitae. Sed iaculis nisl in orci varius, vel ullamcorper massa vestibulum.",
+      "id": 1
     },
     {
-      "id": "02",
-      "titulo": "Lorem ipsum 02",
-      "autor": "Lucas",
-      "thumbnail": "",
-      "paginas": "386",
-      "inicio": "01/05/2022",
-      "termino": "02/05/2022",
-      "nota": "4",
-      "avaliacao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna nulla. Curabitur mollis lorem at mauris vestibulum, ut hendrerit eros facilisis."
+      "paginas": "320",
+      "thumbnail": "http://books.google.com/books/content?id=As6FDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "titulo": "Avalie o Que Importa",
+      "autor": "John Doerr",
+      "inicio": "2022-04-04",
+      "termino": "2022-05-01",
+      "nota": "5",
+      "avaliacao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ligula quam, pharetra a sem sit amet, dapibus hendrerit nisl. Integer vestibulum faucibus tortor. Quisque lacinia nisl velit, consequat dignissim velit luctus vitae. Sed iaculis nisl in orci varius, vel ullamcorper massa vestibulum.",
+      "id": 2
     }
   ]
 }
