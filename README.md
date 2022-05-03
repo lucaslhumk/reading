@@ -2,6 +2,6 @@
 
 Para rodar o projeto siga as instruções abaixo:
 1. Acesse o diretório do projeto `cd reading-edify-main`
-2. Instale as dependências `npm install`
-3. Inicie o servidor `npm run server`
-4. Inicie a aplicação `npm start`
+2. Instale as dependências `npm install` (dentro do diretório do projeto)
+3. Inicie o servidor `npm run server` (dentro do diretório do projeto)
+4. Inicie a aplicação `npm start` (dentro do diretório do projeto)
