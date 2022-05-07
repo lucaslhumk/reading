@@ -15,7 +15,7 @@ export const Form = ({handleSubmit, chosen}) => {
                     <input type="hidden" name="titulo" value={chosen.title} />
 
                     <p>{chosen.authors?.join(", ") ? chosen.authors?.join(", ") : "Autor não informado"}</p>
-                    <input type="hidden" name="autor" value={chosen.authors?.join(", ") ? chosen.authors?.join(", ") : "Autor não informado"} />                                                                
+                    <input type="hidden" name="autor" value={chosen.authors?.join(", ") ? chosen.authors?.join(", ") : "Autor não informado"} />
 
                     <div className="row align-items-center mb-3">
                         <div className="col">Comecei a ler:</div>

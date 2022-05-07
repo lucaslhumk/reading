@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Link } from "react-router-dom"
-import { apiLocal } from '../services/api.js'
-import thumbnail from '../images/thumbnail.jpg'
+import { API_DB } from '../constants/index.js'
 import { useGetBooks } from '../hooks/useGetBooks.js'
+import thumbnail from '../images/thumbnail.jpg'
 
 export function MyBooks() {
     // Listagem dos meus livros
@@ -10,15 +10,15 @@ export function MyBooks() {
 
     useEffect(() => {
         getBooks()
-    }, []);
-    
+    }, [getBooks]);
+
     const removeBook = async (id) => {
         try {
-            const result = await apiLocal.delete(`/MyBooks/${id}`)          
+            await API_DB.delete(`/MyBooks/${id}`)
             getBooks()
         } catch(error) {
             console.log(error)
-        }        
+        }
     }
 
     return (

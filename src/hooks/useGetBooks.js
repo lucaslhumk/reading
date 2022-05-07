@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { apiLocal } from '../services/api.js'
+import { API_DB } from '../constants/index.js'
 
 export const useGetBooks = () => {
     const [books, setBooks] = useState([])
 
     const getBooks = () => {
-        apiLocal.get('/MyBooks').then((response) => {
+        API_DB.get('/MyBooks').then((response) => {
             setBooks(response.data)
         })
     }

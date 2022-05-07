@@ -1,10 +1,10 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import thumbnail from '../images/thumbnail.jpg'
 import { API_GOOGLE } from '../constants/index.js'
 
 export const Search = ({onPick}) => {
-    const [search, setSearch]   = useState('')
+    const [search, setSearch] = useState('')
     const [result, setResult] = useState([])
 
     const handlePick = (chosenBook) => {
@@ -13,14 +13,14 @@ export const Search = ({onPick}) => {
     }
 
     const onSearch = (search) => {
-        setSearch(search) 
+        setSearch(search)
 
         if(search.length > 0) {
             axios.get(API_GOOGLE, {params: {q: search}})
             .then((response) => {
                 setResult(response.data.items)
             })
-        }        
+        }
     }
 
     return (
@@ -34,14 +34,14 @@ export const Search = ({onPick}) => {
                                 <div className="thumb">
                                     <img src={item.volumeInfo.imageLinks&&item.volumeInfo.imageLinks.smallThumbnail !== '' ? item.volumeInfo.imageLinks.smallThumbnail : thumbnail} alt={item.volumeInfo.title} />
                                 </div>
-                                
+
                                 <div>
-                                    <p className='title'>{item.volumeInfo.title}</p> 
-                                    <p className='author'>{item.volumeInfo.authors?.join(", ") ? item.volumeInfo.authors?.join(", ") : "Autor não informado"}</p> 
+                                    <p className='title'>{item.volumeInfo.title}</p>
+                                    <p className='author'>{item.volumeInfo.authors?.join(", ") ? item.volumeInfo.authors?.join(", ") : "Autor não informado"}</p>
                                     <p className='year'>{item.volumeInfo.publishedDate?.substring(0, 4) ? item.volumeInfo.publishedDate?.substring(0, 4) : "Ano não informado"}</p>
                                 </div>
 
-                                <hr />                                          
+                                <hr />
                             </li>
                         ))
                     }
@@ -49,4 +49,4 @@ export const Search = ({onPick}) => {
             )}
         </div>
     )
-} 
+}
