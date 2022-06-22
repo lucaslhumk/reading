@@ -6,7 +6,7 @@ export function Header() {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-auto">
-                        <Link className="logo" title="Reading.com | Edify Education" to="/"><i className="fa-solid fa-book-open"></i> Reading.com</Link>
+                        <Link className="logo" title="Reading.com" to="/"><i className="fa-solid fa-book-open"></i> Reading.com</Link>
                     </div>
 
                     <div className="col">

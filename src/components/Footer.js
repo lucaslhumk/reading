@@ -8,8 +8,8 @@ export function Footer() {
             <div className="container">
                 <div className="row justify-content-between">
                     <div className="col-12 col-lg-3 mb-3">
-                        <Link className="logo" title="Reading.com | Edify Education" to="/"><i className="fa-solid fa-book-open"></i> Reading.com</Link>
-                        <p>Reading.com é um produto fictício para ajudar no processo seletivo para o time de Produto & Desenvolvimento da Hivecloud.</p>
+                        <Link className="logo" title="Reading.com" to="/"><i className="fa-solid fa-book-open"></i> Reading.com</Link>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
                     <div className="col-6 col-lg-auto mb-4">
