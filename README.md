@@ -1,4 +1,5 @@
-# Reading - Edify Education
+# Reading
+Projeto em ReactJS de busca e cadastro de livros utilizando a API do Google Books.
 
 Para rodar o projeto siga as instruções abaixo:
 1. Acesse o diretório do projeto `cd reading-edify-main`
